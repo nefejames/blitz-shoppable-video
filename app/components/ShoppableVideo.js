@@ -11,7 +11,6 @@ const ShoppableVideo = () => {
   useEffect(() => {
     const videoplayer = cld
       .videoPlayer("video-player", {
-        cloud_name: "nefejames",
         controls: true,
       })
       .width(600)
