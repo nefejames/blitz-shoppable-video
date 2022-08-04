@@ -1,6 +1,4 @@
-import { useEffect } from "react"
-import { Head, Script, dynamic } from "blitz"
-import shoppable from "app/data"
+import { Head, dynamic } from "blitz"
 
 const DynamicShoppableVideo = dynamic(() => import("app/components/ShoppableVideo"), {
   ssr: false,

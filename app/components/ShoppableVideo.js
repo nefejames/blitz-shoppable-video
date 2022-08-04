@@ -1,8 +1,6 @@
 import { useEffect } from "react"
-import { Head, Script } from "blitz"
 import shoppable from "app/data"
 import { Cloudinary } from "cloudinary-core"
-
 import "cloudinary-video-player/dist/cld-video-player.min.js"
 import "cloudinary-video-player/dist/cld-video-player.min.css"
 
@@ -24,14 +22,6 @@ const ShoppableVideo = () => {
 
   return (
     <div className="container">
-      <Head>
-        <title>Blitz App</title>
-      </Head>
-      <Script
-        src="https://unpkg.com/cloudinary-video-player@1.9.0/dist/cld-video-player.min.js"
-        strategy="beforeInteractive"
-      />
-
       <h1>Blitz.js Shoppable Video</h1>
       <video controls autoPlay id="video-player"></video>
     </div>
